@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dictionary Maker</title>
+    <title>Colloquial German Dictionary Maker</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div id="tableWrapperDiv">
+        <table id="table">
+             <tr id="tableRowHeaders">
+                 <th id="tableHeaderDE">독일어</th>
+                 <th id="tableHeaderKO">한국어</th>
+                 <th id="tableHeaderEX">예문</th>
+             </tr>
+        </table>
+    </div>
+
+
+
     <!-- 
         1. JSON FILE
         2. UI to enter new expressions
@@ -16,6 +28,7 @@
         5. implement db for JSON file
         6. Python? JS? TS? 
     -->
-    <script defer src="index.js"></script>
+    <script type="module" src="words.js"></script>
+    <script defer type="module" src="index.js"></script>
 </body>
 </html>
